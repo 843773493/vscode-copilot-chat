@@ -1,0 +1,70 @@
+{
+  "title": "1 - Getting Started",
+  "description": "入职导览 — 介绍项目结构、关键位置，以及常见开发与调试流程（中文版本）。",
+  "ref": "main",
+  "isPrimary": true,
+  "steps": [
+    {
+      "title": "欢迎",
+      "description": "# 欢迎！\n\n欢迎来到 Copilot Chat 仓库。本导览将帮助你快速了解项目目标、架构与常用开发步骤。"
+    },
+    {
+      "title": "项目概览",
+      "file": "README.md",
+      "line": 1,
+      "description": "阅读 `README.md` 以获取项目简介、安装与快速上手说明。"
+    },
+    {
+      "title": "架构总览",
+      "file": "docs/architecture.md",
+      "pattern": "# Architecture",
+      "description": "查看 `docs/architecture.md`，理解系统的主要模块（平台服务、扩展层、测试/仿真等）。"
+    },
+    {
+      "title": "贡献与编码规范",
+      "file": ".github/copilot-instructions.zh-CN.md",
+      "description": "仓库的贡献流程、编码规范与重要约定记录在 `.github/copilot-instructions.zh-CN.md`。建议先阅读以遵循项目约定。"
+    },
+    {
+      "title": "运行脚本与任务",
+      "file": "package.json",
+      "pattern": "\"scripts\"",
+      "description": "在 `package.json` 查看常用 scripts（如 `compile`, `watch`, `test`）。开发时常用 `watch` 任务来保持实时编译。"
+    },
+    {
+      "title": "扩展激活点（入口）",
+      "file": "src/extension/extension/vscode/extension.ts",
+      "pattern": "export async function baseActivate",
+      "description": "扩展的启动和服务注册集中在 `src/extension/extension/vscode/extension.ts` 的 `baseActivate`，是理解生命周期的好起点。"
+    },
+    {
+      "title": "入门与 Walkthrough",
+      "directory": "src/extension/getting-started",
+      "description": "`src/extension/getting-started/` 包含交互式入门流程、Walkthrough 与新工作区初始化代码。"
+    },
+    {
+      "title": "调试入门",
+      "directory": "src/extension/onboardDebug",
+      "description": "`src/extension/onboardDebug/` 包含调试相关的工具与测试，可用来学习如何在仿真或本地运行调试流程。"
+    },
+    {
+      "title": "对话系统实现",
+      "directory": "src/extension/conversation",
+      "description": "聊天参与者、会话管理、欢迎信息和反馈收集等逻辑位于 `src/extension/conversation/`。"
+    },
+    {
+      "title": "Inline Chat 与 Inline Edits",
+      "directory": "src/extension/inlineChat",
+      "description": "内联聊天（`inlineChat`）与内联编辑（`inlineEdits`）是用户交互的核心功能，包含提示、命令与可视化实现。"
+    },
+    {
+      "title": "测试与仿真",
+      "directory": "test",
+      "description": "项目有大量测试与仿真工具（`/test`, `/test/simulation` 等），阅读测试可以快速理解系统行为和期望输出。"
+    },
+    {
+      "title": "下一步建议",
+      "description": "1. 阅读上面列出的文件并打开几个关键源码文件进行浏览；\n2. 启动 `watch` 任务以便实时编译；\n3. 尝试运行部分测试以熟悉仿真与测试流程；\n4. 有问题可参考 `CONTRIBUTING.md` 或创建 PR。谢谢！"
+    }
+  ]
+}
